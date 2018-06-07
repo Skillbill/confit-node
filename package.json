@@ -7,5 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Skillbill srl",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skillbill/confit-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Skillbill/confit-node/issues"
+  },
+  "homepage": "https://github.com/Skillbill/confit-node#readme"
 }
