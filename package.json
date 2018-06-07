@@ -1,0 +1,11 @@
+{
+  "name": "confit-client",
+  "version": "0.1.0",
+  "description": "confit client for node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Skillbill srl",
+  "license": "ISC"
+}
