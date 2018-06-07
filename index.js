@@ -3,7 +3,7 @@ const https = require('https')
 const qs = require('querystring')
 
 const defaults = {
-    hostname: process.env['CONFIT_HOST'] || 'confit.skillbill.net/api',
+    hostname: process.env['CONFIT_HOST'] || 'confit.skillbill.net',
     port: process.env['CONFIT_PORT'],
     token: process.env['CONFIT_TOKEN'],
     repoId: process.env['CONFIT_REPOID'],
@@ -27,7 +27,7 @@ Confit.prototype._getConf = function (path) {
             host: this.hostname,
             port: this.port,
             headers: this.token ? {Authorization: `token ${this.token}`} : undefined,
-            path: path
+            path: '/api' + path
         }, res => {
             if (res.statusCode < 200 || res.statusCode > 299) {
                 reject(new Error(`Confit call failed with status: ${res.statusCode}: ${res.statusMessage} (at ${res.url})`))
