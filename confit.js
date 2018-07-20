@@ -10,7 +10,6 @@ function Confit(options) {
 Confit.prototype.load = function (options) {
   opt = utils.mergeOptions(this.options, options || {})
 
-  console.log(opt)
   let relpath = `/repo/${opt.repoId}`
 
   if (opt.alias) {
