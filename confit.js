@@ -30,7 +30,7 @@ Confit.prototype.load = function (options) {
       agent.get({
         host: opt.hostname,
         port: opt.port,
-        headers: opt.repoSecret ? {Authorization: `token ${opt.repoSecret}`} : undefined,
+        headers: opt.repoSecret ? {Authorization: `secret ${opt.repoSecret}`} : undefined,
         path: '/api' + relpath
       }, res => {
           if (res.statusCode < 200 || res.statusCode > 299) {
