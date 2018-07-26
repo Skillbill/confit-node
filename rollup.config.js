@@ -34,7 +34,7 @@ module.exports = [
       {
         file: pkg.browser,
         format: 'iife',
-        name: 'confit'
+        name: 'Confit'
       }
     ],
     plugins: [

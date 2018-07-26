@@ -1,16 +1,20 @@
 # Confit client
 ##  Install
+Using npm:
 ```bash
 npm install --save confit-client
 ```
-
+Using cdn:
+```html
+<script src="https://unpkg.com/confit-client/dist/confit-client.iife.min.js"></script>
+```
 ## Usage
 ```js
-confit = require('confit-client')
+Confit = require('confit-client')
 ```
 Load a public configuration from alias:
 ```js
-confit.load({
+Confit.load({
   repoId: '178474a9-360e-4299-a2e1-e8ae284ce909',
   alias: 'test.site.com-fe'
 }).then(configuration => {
@@ -19,7 +23,7 @@ confit.load({
 ```
 Load a private configuration from path:
 ```js
-confit.load({
+Confit.load({
   repoId: '178474a9-360e-4299-a2e1-e8ae284ce909',
   repoSecret : 'f18d2da0-5a38-4b2f-8a05-c021cfe48821',
   path: 'test/be.json'
