@@ -7,6 +7,10 @@ npm install --save confit-client
 Using cdn:
 ```html
 <script src="https://unpkg.com/confit-client/dist/confit-client.iife.min.js"></script>
+<script>
+  // now a Confit object is accessible:
+  Confit.load({...}).then(...);
+</script>
 ```
 ## Usage
 ```js
