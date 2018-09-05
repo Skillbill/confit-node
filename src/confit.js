@@ -21,7 +21,7 @@ Confit.prototype.load = function (options) {
   let req = {
     method: 'get',
     url: opt.serverUrl + relpath,
-    headers: opt.repoSecret ? {Authorization: `token ${opt.repoSecret}`} : undefined,
+    headers: opt.repoSecret ? {Authorization: `secret ${opt.repoSecret}`} : undefined,
   }
 
   if (opt.ref) {
