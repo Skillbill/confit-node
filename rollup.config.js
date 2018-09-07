@@ -32,7 +32,7 @@ module.exports = [
     input: 'src/index.js',
     output: [
       {
-        file: pkg.browser,
+        file: 'dist/confit-client.iife.min.js',
         format: 'iife',
         name: 'Confit'
       }

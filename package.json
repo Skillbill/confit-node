@@ -4,7 +4,6 @@
   "description": "confit client for node.js",
   "main": "dist/confit-client.cjs.min.js",
   "module": "dist/confit-client.es.min.js",
-  "browser": "dist/confit-client.iife.min.js",
   "files": [
     "dist"
   ],
