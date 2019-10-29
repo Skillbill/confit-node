@@ -6,7 +6,24 @@ Confit client
 
 This is the Javascript client for the [CONFIT Skillbill service](https://confit.skillbill.net/)
 
-## Deploy
+## Dev and deploy
+
+ - make your changes
+ - modify packge.json version
+ - commit your changes
+ - build and add dist folder
+ 
+ ```bash
+ npm run version
+ ```
+ 
+ - push 
+ 
+ ```bash
+ npm run postversion
+ ```
+
+ - publish
 
 ```bash
 npm publish
