@@ -1,7 +1,7 @@
 {
   "name": "confit-client",
-  "version": "0.4.0",
-  "description": "confit client for node.js",
+  "version": "0.4.2",
+  "description": "confit client",
   "main": "dist/confit-client.cjs.min.js",
   "module": "dist/confit-client.es.min.js",
   "files": [
